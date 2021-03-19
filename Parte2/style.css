@@ -1,43 +1,90 @@
 header {
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 
 h2 {
-
+  border:solid;
+  border-width: 1px;
+  width:100%;
+  margin-right:3px;
+  border-color: black;
+  text-align:center;
 }
 
 .nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 
 
   }
 
   li {
+    list-style: none;
 
+    border:solid;
+    border-width: 1px;
+    width:100%;
+    margin-right:10px;
+    border-color: gray;
+    text-align:center;
 
   }
 
   .content{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
 
 }
 
   .aside {
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    width:18%;
+    height:200px;
 
+    border:solid;
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+
+    
   }
 
   .slidebox{
-
+    border:solid;
+    border-width: 1px;
+    border-color: black;
    
   }
 
   .article{
+    display:flex;
+    flex-direction:row;
+    margin:0;
+    align-items: flex-start;
+    width:80%;
+    height:200px;
 
+
+    border:solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: start;
   }
 
 
 .poem{
-
+    border:solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: start;
 }
 
 
@@ -45,28 +92,47 @@ h2 {
   Screen = B/w 600px to 990px*/
   @media (min-width:600px) and (max-width: 990px)  {
     .article {
-
+      display:flex;
+      flex-direction:column;
+      border:solid;
+      border-width: 1px;
+      border-color: black;
+      text-align: start;
+      height:380px;
   } 
-header{
+    header{
+      display:none;
+    }
 
-}
+    .aside{
+      height:380px;
+    }
 }
 
 /*  Small devices    */
 @media (max-width:599px) {
 
 header,.content{
-
+  display: none;
 }
 
 .nav {
-
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   }
 
 
 .nav > li {
-
+  list-style: none;
+  margin-bottom: 120px;
+  
+  width:300px;
+  border:solid;
+  border-width: 1px;
+  border-color: black;
+  text-align:center;
 }
 
 
